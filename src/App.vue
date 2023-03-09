@@ -65,7 +65,7 @@ const getNavActive = (value:number)=>{
     }
 
     .nav-item {
-      color: #ffff;
+      color: #D1ECFF;
       transition: color 0.2s linear;
     }
 
