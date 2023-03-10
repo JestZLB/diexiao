@@ -10,6 +10,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.15",
     "echarts": "^5.4.1",
     "pinia": "^2.0.32",
     "postcss-import": "^15.1.0",
