@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import home from '@/views/home/index.vue'
 import more from '@/views/more/index.vue'
+import NotFound from '@/views/404/index.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,7 +25,15 @@ const router = createRouter({
       meta : {
         title : '更多'
       }
-    }
+    },
+    { 
+      path: '/:pathMatch(.*)*', 
+      name: 'NotFound', 
+      component: NotFound, 
+      meta : {
+        title : '404'
+      }
+    },
   ]
 })
 

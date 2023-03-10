@@ -1,18 +1,27 @@
+@import "../../assets/scss/main.scss";
 .home {
     width: 100vw;
     height: 100vh;
     padding-top: 6vh;
 
     .text-block {
-        width: 85%;
-        padding: 1rem;
+        width: 95%;
+        padding: 1.5rem 1rem 1.5rem 1rem;
         background-color: rgba(252, 252, 252,.8);
         border-radius: 16px;
+        box-sizing: border-box;
 
         .title {
             width: 100%;
-            height: 2.5rem;
+            >text {
+                background: linear-gradient(to right, $msrColor 0%, $nnmColor 25%, $tubiColor 50%,$ruiColor 75%,$tokoColor 100%);
+                -webkit-background-clip: text;
+                color: transparent;
+                text-align: center;
+            }
         }
+
+
     }
 
     .title-chart {

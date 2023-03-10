@@ -55,7 +55,7 @@ const navList = ref<Array<navItem>>(
 
 <template>
   <header>
-    <div class="navpart flex items-center">
+    <div class="navpart flex items-center fixed">
       <div class="nav-bg"></div>
       <div 
       v-for=" item in navList " 
@@ -73,21 +73,21 @@ const navList = ref<Array<navItem>>(
 
   <RouterView />
   <PageLoading v-if="appLoad"></PageLoading>
+  
 </template>
 
 <style lang="scss" scoped>
   .navpart {
     width: 100%;
     height: 6vh;
-    position: absolute;
     z-index: 1;
     top: 0px;
     left: 0px;
 
     .nav-bg {
+      position: absolute;
       background-color: rgba(148, 148, 148, 0.8);
       filter: blur(2px);
-      position: absolute;
       top: 0px;
       height: 0px;
       z-index: -1;
