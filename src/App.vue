@@ -32,7 +32,9 @@ time = setInterval(()=>{
   if(bgImg.complete) {
     clearInterval(time);
     document.querySelector('#bodyMain')?.setAttribute('style',bodyStyle);
-    appLoad.value = false;
+    setTimeout(()=>{
+      appLoad.value = false;
+    },200)
   }
 },50)
 
@@ -78,7 +80,7 @@ const navList = ref<Array<navItem>>(
 
 <style lang="scss" scoped>
   .navpart {
-    width: 100%;
+    width: 100vw;
     height: 6vh;
     z-index: 1;
     top: 0px;
